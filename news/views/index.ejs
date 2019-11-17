@@ -35,7 +35,7 @@
           <% for(var i=0; i<data.length; i++) { %>
             <tr class="alt">
             <td><div class="typeblock"><%= data[i].news_type %></div></td>
-            <td><a href="#"><%= data[i].news_subject %></a></td>
+            <td><a href="/detail?id=<%= data[i].news_id %>&pageNo=<%= pageNo %>"><%= data[i].news_subject %></a></td>
             <td><%= (data[i].news_date).toLocaleDateString() %></td>
             <td><%= data[i].news_hits %></td>
             </tr>

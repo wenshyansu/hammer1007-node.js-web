@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>最新消息</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<div id="warp">
+		<div id="header">
+      <div class="toplogin">
+        <a href="#" title="登入管理介面">
+        <img src="images/Lock.png" alt="登入管理介面" width="32" height="32" /></a>
+      </div>
+      <div class="logo">
+				<img src="images/DWonline.png" width="180" height="40" />
+			</div>
+		</div>
+		<div class="headings">
+		  <h2>新聞系統</h2>
+		</div>  
+		<div class="contentbox">
+			<table width="100%">
+			<tr>
+			  <th align="left"><span class="typeblock"><%= data[0].news_type %>&nbsp;&nbsp;</span>&nbsp;&nbsp;<%= data[0].news_subject %></th>
+			</tr>
+			<tr>
+			  <td><span class="newsinfo">
+				<img src="images/date.png" alt="" width="16" height="16" />&nbsp;<%= (data[0].news_date).toLocaleDateString() %>
+				&nbsp;<img src="images/user.png" alt="" width="16" height="16" />&nbsp;<%= data[0].news_editor %> 
+				<p>&nbsp;&nbsp;<%= data[0].news_content %></p>
+			  </td>
+			</tr>
+			</table>
+			<div class="topfunction">
+				<a href="/index?pageNo=<%= pageNo %>" title="返回首頁">
+				  <img src="images/home.png" alt="返回首頁" width="86" height="32" /></a>
+			</div>
+		</div>
+    <div id="footer">&copy; Copyright 2017 eHappy Studio 新聞系統</div>
+	</div>
+</body>
+</html>
