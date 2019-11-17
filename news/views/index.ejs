@@ -28,10 +28,10 @@
         <th align="left">點閱</th>
       </tr>
       <tr class="alt">
-      <td><div class="typeblock"><%= ntype %></div></td>
-      <td><a href="#"><%= nsubject %></a></td>
-      <td><%= ndate %></td>
-      <td><%= nhits %></td>
+      <td><div class="typeblock"><%= data[0].news_type %></div></td>
+      <td><a href="#"><%= data[0].news_subject %></a></td>
+      <td><%= (data[0].news_date).toLocaleDateString() %></td>
+      <td><%= data[0].news_hits %></td>
       </tr>
       </table>
       </div>
