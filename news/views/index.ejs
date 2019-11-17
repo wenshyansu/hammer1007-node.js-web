@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<head>
+	<meta charset='utf-8'>
+	<title>最新消息</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<div id="warp">
+		<div id="header">
+      <div class="toplogin">
+        <a href="#" title="登入管理介面">
+        <img src="images/Lock.png" alt="登入管理介面" width="32" height="32" /></a>
+      </div>
+      <div class="logo">
+				<img src="images/DWonline.png" width="180" height="40" />
+			</div>
+		</div>
+		<div class="headings">
+		  <h2>新聞系統</h2>
+		</div>  
+    <div class="contentbox">
+      <table width="100%">
+      <tr>
+        <th align="left">分類</th>
+        <th align="left">標題</th>
+        <th align="left">時間</th>
+        <th align="left">點閱</th>
+      </tr>
+      <tr class="alt">
+      <td><div class="typeblock"><%= ntype %></div></td>
+      <td><a href="#"><%= nsubject %></a></td>
+      <td><%= ndate %></td>
+      <td><%= nhits %></td>
+      </tr>
+      </table>
+      </div>
+    </div>
+    <div id="footer">&copy; Copyright 2017 eHappy Studio 新聞系統</div>
+	</div>
+</body>
 </html>
