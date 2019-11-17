@@ -1,5 +1,5 @@
 /*
-2.第一個nodejs程式
+node.js從無到有建立網站1-2：第一個nodejs程式
 http://hammer1007.blogspot.com/2017/11/nodejs1-2nodejs.html
  */
 var http = require("http");
