@@ -27,12 +27,15 @@
         <th align="left">時間</th>
         <th align="left">點閱</th>
       </tr>
-      <tr class="alt">
-      <td><div class="typeblock"><%= data[0].news_type %></div></td>
-      <td><a href="#"><%= data[0].news_subject %></a></td>
-      <td><%= (data[0].news_date).toLocaleDateString() %></td>
-      <td><%= data[0].news_hits %></td>
-      </tr>
+
+      <% for (var i=0; i<data.length; i++) { %>
+        <tr class="alt">
+            <td><div class="typeblock"><%= data[i].news_type %></div></td>
+            <td><a href="#"><%= data[i].news_subject %></a></td>
+            <td><%= (data[i].news_date).toLocaleDateString() %></td>
+            <td><%= data[i].news_hits %></td>
+        </tr>
+      <% } %>
       </table>
       </div>
     </div>
