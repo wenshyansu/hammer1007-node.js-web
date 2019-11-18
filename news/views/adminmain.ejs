@@ -39,7 +39,7 @@
           <td><%= (data[i].news_date).toLocaleDateString() %></td>
           <td>
             <a href="/newsedit?id=<%= data[i].news_id %>&pageNo=<%= pageNo %>" title="新聞編輯"> <img src="images/note_edit.png"  width="16" height="16" /></a>
-            <a href="#" title="新聞刪除"><img src="images/cross.png" width="16" height="16" /></a>
+            <a href="/newsdelete?id=<%= data[i].news_id %>&pageNo=<%= pageNo %>" title="新聞刪除"><img src="images/cross.png" width="16" height="16" /></a>
           </td>
           </tr>
         <% } %>
