@@ -35,6 +35,9 @@ app.use('/adminmain', adminmain);
 var logout = require('./routes/logout');
 app.use('/logout', logout);
 
+var newsadd = require('./routes/newsadd');
+app.use('/newsadd', newsadd);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
