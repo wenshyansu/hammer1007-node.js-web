@@ -26,6 +26,9 @@ app.use('/index', indexRouter);
 var detail = require('./routes/detail');
 app.use('/detail', detail);
 
+var login = require('./routes/login');
+app.use('/login', login);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
